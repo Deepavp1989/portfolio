@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Deepa VP — PHP Developer & PHP Trainer from Thrissur, Kerala. Skilled in Core PHP, Laravel, CodeIgniter, MySQL, JavaScript, AJAX, Bootstrap, REST APIs, and AI-assisted development.">
+    <title>Deepa VP | PHP Developer &amp; PHP Trainer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Header & Navigation -->
+    <header class="site-header" id="site-header">
+        <nav class="navbar container" aria-label="Primary Navigation">
+            <a href="#top" class="brand" aria-label="Deepa VP Home">
+                <span class="brand-badge">&lt;?php</span>
+                <span class="brand-text">Deepa<span class="accent">.VP</span></span>
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#training">Training</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button type="button" class="icon-btn theme-toggle" id="theme-toggle"
+                    aria-label="Toggle light and dark theme" title="Toggle theme">
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        aria-hidden="true">
+                        <circle cx="12" cy="12" r="5" />
+                        <path
+                            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                </button>
+                <a href="#contact" class="btn btn-primary btn-sm nav-cta">Get in Touch</a>
+                <button type="button" class="icon-btn menu-toggle" id="menu-toggle" aria-expanded="false"
+                    aria-controls="nav-links" aria-label="Open navigation menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="top">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <div class="availability-pill">
+                        <span class="pulse-dot" aria-hidden="true"></span>
+                        PHP Trainer at ATEES Industrial Training Center &bull; Thrissur, Kerala
+                    </div>
+                    <h1>
+                        Deepa VP &mdash; <span class="gradient-text">PHP Developer</span> &amp;
+                        Technical Trainer.
+                    </h1>
+                    <p class="hero-subtitle">
+                        PHP Trainer and Web Developer experienced in full-stack web development and technical
+                        instruction. Skilled in <strong>Core PHP, Laravel, CodeIgniter, MySQL, JavaScript, AJAX,
+                        Bootstrap,</strong> and <strong>REST APIs</strong> &mdash; mentoring students through
+                        real-world projects and AI-assisted development workflows.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="#experience" class="btn btn-primary">View Experience</a>
+                        <a href="#training" class="btn btn-secondary">Training &amp; Mentoring</a>
+                    </div>
+                    <div class="hero-meta">
+                        <span><strong>Core PHP</strong> &amp; OOP</span>
+                        <span class="sep" aria-hidden="true">&bull;</span>
+                        <span><strong>Laravel</strong> &amp; CodeIgniter</span>
+                        <span class="sep" aria-hidden="true">&bull;</span>
+                        <span><strong>MySQL</strong> &amp; REST APIs</span>
+                    </div>
+                </div>
+
+                <!-- Interactive PHP Code Showcase -->
+                <div class="code-window" aria-label="Interactive PHP Code Examples">
+                    <div class="code-window-header">
+                        <div class="window-dots" aria-hidden="true">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="code-tabs" role="tablist" aria-label="Code Examples">
+                            <button type="button" class="code-tab active" role="tab" aria-selected="true"
+                                data-tab="laravel">StudentController.php</button>
+                            <button type="button" class="code-tab" role="tab" aria-selected="false"
+                                data-tab="oop">ProjectRepository.php</button>
+                            <button type="button" class="code-tab" role="tab" aria-selected="false"
+                                data-tab="api">ApiResponse.php</button>
+                        </div>
+                        <button type="button" class="copy-code-btn" id="copy-code-btn" title="Copy code"
+                            aria-label="Copy PHP snippet">
+                            Copy
+                        </button>
+                    </div>
+                    <pre class="code-body"><code id="code-display"></code></pre>
+                    <div class="code-footer">
+                        <span class="status-tag" id="code-status">Laravel &bull; Eloquent ORM, Validation &amp; Authorization</span>
+                        <button type="button" class="run-btn" id="run-demo-btn">&#9654; Simulate Run</button>
+                    </div>
+                    <div class="terminal-output" id="terminal-output" hidden></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Highlights Strip -->
+        <section class="stats-section" aria-label="Core Focus Highlights">
+            <div class="container stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">Core &amp; MVC</div>
+                    <div class="stat-label">PHP, Laravel &amp; CodeIgniter</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">Full-Stack</div>
+                    <div class="stat-label">HTML5, CSS3, JS, AJAX &amp; Bootstrap</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">MySQL &amp; APIs</div>
+                    <div class="stat-label">Database Design &amp; REST Integration</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">AI-Assisted</div>
+                    <div class="stat-label">Copilot, Codex, ChatGPT &amp; Gemini</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Professional Summary -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Professional Summary</span>
+                    <h2>Full-Stack PHP Development &amp; Practical Instruction</h2>
+                    <p>
+                        Combining hands-on web application development experience with structured technical training,
+                        debugging mentorship, and modern AI-assisted workflows.
+                    </p>
+                </div>
+
+                <div class="dual-grid">
+                    <article class="pillar-card">
+                        <div class="pillar-icon" aria-hidden="true">{ }</div>
+                        <h3>PHP &amp; Web Developer</h3>
+                        <p>
+                            Experienced in building and maintaining dynamic websites and web applications across
+                            agency and software house environments in Bangalore and Thrissur.
+                        </p>
+                        <ul class="check-list">
+                            <li>Core PHP, Laravel, CodeIgniter &amp; Object-Oriented Programming (OOP)</li>
+                            <li>MVC architecture, CRUD operations &amp; REST API integration</li>
+                            <li>MySQL database design, integration &amp; SQL query optimization</li>
+                            <li>Debugging, performance optimization &amp; customized client solutions</li>
+                        </ul>
+                    </article>
+
+                    <article class="pillar-card pillar-highlight">
+                        <div class="pillar-icon" aria-hidden="true">&gt;_</div>
+                        <h3>PHP Trainer &amp; Mentor</h3>
+                        <p>
+                            Delivering practical full-stack PHP training at ATEES Industrial Training Center Pvt. Ltd.,
+                            guiding students from core fundamentals to real-world project delivery.
+                        </p>
+                        <ul class="check-list">
+                            <li>Hands-on instruction in Core PHP, Laravel, CodeIgniter &amp; MySQL</li>
+                            <li>Mentoring students through MVC architecture, CRUD &amp; REST APIs</li>
+                            <li>Live debugging guidance and code quality best practices</li>
+                            <li>Technical documentation, course materials &amp; practical assessments</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="section section-alt" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Technical Skills</span>
+                    <h2>Technologies, Frameworks &amp; AI Tools</h2>
+                    <p>Filter by domain to view the full technical stack across backend, frontend, database, and AI tools.</p>
+                </div>
+
+                <div class="filter-bar" role="group" aria-label="Filter skills">
+                    <button type="button" class="filter-btn active" data-skill-filter="all">All Skills</button>
+                    <button type="button" class="filter-btn" data-skill-filter="backend">Backend &amp; Laravel</button>
+                    <button type="button" class="filter-btn" data-skill-filter="frontend">Frontend &amp; Database</button>
+                    <button type="button" class="filter-btn" data-skill-filter="tools">Tools, QA &amp; AI</button>
+                </div>
+
+                <div class="skills-grid" id="skills-grid">
+                    <div class="skill-card" data-category="backend">
+                        <div class="skill-top">
+                            <h3>Backend &amp; PHP</h3>
+                            <span class="skill-tag">Core</span>
+                        </div>
+                        <p>PHP, Core PHP, Laravel, CodeIgniter, Object-Oriented Programming (OOP), MVC Architecture, CRUD Operations, and REST APIs.</p>
+                        <div class="tech-pills">
+                            <span>PHP</span><span>OOP</span><span>MVC</span><span>REST APIs</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="backend">
+                        <div class="skill-top">
+                            <h3>Laravel Technologies</h3>
+                            <span class="skill-tag">Framework</span>
+                        </div>
+                        <p>Building structured Laravel applications with Eloquent ORM, Blade Templating, Middleware, Authorization, and Form Validation.</p>
+                        <div class="tech-pills">
+                            <span>Eloquent ORM</span><span>Blade</span><span>Middleware</span><span>Validation</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-top">
+                            <h3>PHP Tools &amp; Versioning</h3>
+                            <span class="skill-tag">Workflow</span>
+                        </div>
+                        <p>Dependency management, source control, and collaborative workflows using Composer, Git, and GitHub.</p>
+                        <div class="tech-pills">
+                            <span>Composer</span><span>Git</span><span>GitHub</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-top">
+                            <h3>Frontend Development</h3>
+                            <span class="skill-tag">UI</span>
+                        </div>
+                        <p>Responsive interfaces and asynchronous dynamic features with HTML5, CSS3, JavaScript, AJAX, and Bootstrap.</p>
+                        <div class="tech-pills">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>AJAX</span><span>Bootstrap</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-top">
+                            <h3>Database Engineering</h3>
+                            <span class="skill-tag">Data</span>
+                        </div>
+                        <p>Relational schema modeling, query optimization, and backend integration with MySQL and SQL.</p>
+                        <div class="tech-pills">
+                            <span>MySQL</span><span>SQL</span><span>Database Design</span><span>Integration</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-top">
+                            <h3>Development &amp; Quality</h3>
+                            <span class="skill-tag">Craft</span>
+                        </div>
+                        <p>Systematic debugging, performance optimization, clean code quality, and third-party API integration.</p>
+                        <div class="tech-pills">
+                            <span>Debugging</span><span>Performance</span><span>Code Quality</span><span>API Integration</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-top">
+                            <h3>AI Tools</h3>
+                            <span class="skill-tag">Productivity</span>
+                        </div>
+                        <p>Proficient in AI-assisted coding, debugging, documentation, and material creation across modern AI platforms.</p>
+                        <div class="tech-pills">
+                            <span>ChatGPT</span><span>OpenAI Codex</span><span>GitHub Copilot</span><span>Google Gemini</span><span>Figma AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Timeline -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Career Journey</span>
+                    <h2>Professional Experience</h2>
+                    <p>Roles spanning technical training, full-stack PHP web development, and SQL performance optimization.</p>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-card timeline-current">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="badge-pill">May 2025 &ndash; Present</span>
+                                <h3>PHP Trainer</h3>
+                                <p class="timeline-org">ATEES Industrial Training Center Pvt. Ltd. &bull; Thrissur, Kerala</p>
+                            </div>
+                        </div>
+                        <ul class="check-list">
+                            <li>Deliver practical training in Core PHP, Laravel, CodeIgniter, MySQL, REST APIs, and web development.</li>
+                            <li>Mentor students in full-stack project development, MVC architecture, CRUD operations, database integration, and debugging.</li>
+                            <li>Prepare technical documentation, course materials, assignments, and practical assessments using AI-assisted tools.</li>
+                        </ul>
+                    </article>
+
+                    <article class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="badge-pill">2024 &ndash; 2025</span>
+                                <h3>PHP Developer</h3>
+                                <p class="timeline-org">Webbuild Technologies &bull; Bangalore, Karnataka</p>
+                            </div>
+                        </div>
+                        <ul class="check-list">
+                            <li>Developed dynamic websites and web applications using PHP, MySQL, HTML, CSS, JavaScript, and Bootstrap.</li>
+                            <li>Implemented backend functionality, database integration, and dynamic features.</li>
+                            <li>Resolved application issues, maintained websites, and delivered customized client solutions.</li>
+                        </ul>
+                    </article>
+
+                    <article class="timeline-card timeline-break">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="badge-pill">2019 &ndash; 2024</span>
+                                <h3>Career Break</h3>
+                                <p class="timeline-org">Personal Commitments &amp; Continuous Upskilling</p>
+                            </div>
+                        </div>
+                        <p class="timeline-note">
+                            Took a planned career break for personal commitments. Subsequently returned to professional
+                            software development and continued building technical expertise in PHP and web development.
+                        </p>
+                    </article>
+
+                    <article class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="badge-pill">2018 &ndash; 2019</span>
+                                <h3>PHP Developer</h3>
+                                <p class="timeline-org">Penta Software House &bull; Thrissur, Kerala</p>
+                            </div>
+                        </div>
+                        <ul class="check-list">
+                            <li>Developed and maintained web applications using PHP, CodeIgniter, MySQL, HTML, CSS, and JavaScript.</li>
+                            <li>Implemented database operations, debugged application issues, and optimized SQL queries.</li>
+                            <li>Collaborated with development teams to test and deploy web applications.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Training & Mentorship Focus -->
+        <section class="section section-alt" id="training">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Technical Instruction</span>
+                    <h2>What I Teach &amp; Mentor</h2>
+                    <p>
+                        Practical, project-oriented training designed to help learners master backend engineering,
+                        database integration, and real-world debugging.
+                    </p>
+                </div>
+
+                <div class="training-layout">
+                    <div class="programs-list">
+                        <article class="program-card">
+                            <div class="program-meta">
+                                <span class="badge-pill">Core Foundations</span>
+                                <span class="program-level">Core PHP &amp; MySQL</span>
+                            </div>
+                            <h3>Core PHP, OOP &amp; Database Integration</h3>
+                            <p>
+                                Hands-on mastery of PHP syntax, Object-Oriented Programming (OOP), MVC principles,
+                                CRUD operations, MySQL database design, and secure SQL query execution.
+                            </p>
+                            <div class="program-footer">
+                                <span class="format-note">Project-Based Labs &amp; Assignments</span>
+                                <button type="button" class="btn btn-secondary btn-sm request-syllabus"
+                                    data-course="Core PHP, OOP & MySQL Training">Inquire Now</button>
+                            </div>
+                        </article>
+
+                        <article class="program-card">
+                            <div class="program-meta">
+                                <span class="badge-pill">Frameworks &amp; APIs</span>
+                                <span class="program-level">Laravel &amp; CodeIgniter</span>
+                            </div>
+                            <h3>Laravel, CodeIgniter &amp; REST API Development</h3>
+                            <p>
+                                Practical training in Laravel Eloquent ORM, Blade templating, middleware, authorization,
+                                form validation, CodeIgniter MVC apps, and RESTful API integration.
+                            </p>
+                            <div class="program-footer">
+                                <span class="format-note">Full-Stack Capstone Mentoring</span>
+                                <button type="button" class="btn btn-secondary btn-sm request-syllabus"
+                                    data-course="Laravel & CodeIgniter Training">Inquire Now</button>
+                            </div>
+                        </article>
+
+                        <article class="program-card">
+                            <div class="program-meta">
+                                <span class="badge-pill">Modern Workflow</span>
+                                <span class="program-level">Git, Debugging &amp; AI</span>
+                            </div>
+                            <h3>Full-Stack Frontend, Debugging &amp; AI-Assisted Coding</h3>
+                            <p>
+                                Connecting PHP backends with HTML5, CSS3, JavaScript, AJAX, and Bootstrap while using
+                                Git/GitHub, systematic debugging, and AI tools like Copilot, Gemini, and ChatGPT responsibly.
+                            </p>
+                            <div class="program-footer">
+                                <span class="format-note">Practical Assessments &amp; Code Quality</span>
+                                <button type="button" class="btn btn-secondary btn-sm request-syllabus"
+                                    data-course="Full-Stack PHP & AI-Assisted Development">Inquire Now</button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Interactive Training Modules Accordion -->
+                    <aside class="curriculum-box" aria-label="Training Focus Modules">
+                        <h3>Core Training Modules</h3>
+                        <p class="curriculum-intro">Key topics covered in classroom and project mentoring sessions.</p>
+
+                        <div class="accordion" id="curriculum-accordion">
+                            <div class="accordion-item open">
+                                <button type="button" class="accordion-trigger" aria-expanded="true">
+                                    <span>Module 1: Core PHP, OOP &amp; MVC</span>
+                                    <span class="acc-icon" aria-hidden="true">+</span>
+                                </button>
+                                <div class="accordion-panel">
+                                    <p>Core PHP fundamentals, Object-Oriented Programming (OOP), MVC architecture,
+                                        Composer setup, and building clean CRUD workflows.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button type="button" class="accordion-trigger" aria-expanded="false">
+                                    <span>Module 2: MySQL Design &amp; Frontend Integration</span>
+                                    <span class="acc-icon" aria-hidden="true">+</span>
+                                </button>
+                                <div class="accordion-panel">
+                                    <p>Database design, SQL query optimization, and integrating backend APIs with
+                                        HTML5, CSS3, JavaScript, AJAX, and Bootstrap.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button type="button" class="accordion-trigger" aria-expanded="false">
+                                    <span>Module 3: Laravel &amp; CodeIgniter</span>
+                                    <span class="acc-icon" aria-hidden="true">+</span>
+                                </button>
+                                <div class="accordion-panel">
+                                    <p>Laravel Eloquent ORM, Blade templating, middleware, authorization, form validation,
+                                        CodeIgniter patterns, and REST API endpoints.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button type="button" class="accordion-trigger" aria-expanded="false">
+                                    <span>Module 4: Debugging, Git &amp; AI-Assisted Workflows</span>
+                                    <span class="acc-icon" aria-hidden="true">+</span>
+                                </button>
+                                <div class="accordion-panel">
+                                    <p>Git &amp; GitHub collaboration, debugging application issues, performance optimization,
+                                        technical documentation, and AI tools (ChatGPT, Codex, Copilot, Gemini, Figma AI).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications -->
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Credentials</span>
+                    <h2>Education &amp; Certifications</h2>
+                    <p>Formal engineering foundation paired with specialized PHP framework certification.</p>
+                </div>
+
+                <div class="dual-grid">
+                    <article class="edu-card">
+                        <span class="badge-pill">2017</span>
+                        <h3>Certification in PHP Programming (CodeIgniter)</h3>
+                        <p class="edu-org">ATEES Industrial Training Center, Thrissur</p>
+                        <p class="edu-desc">
+                            Specialized practical certification focused on PHP web application development and the
+                            CodeIgniter MVC framework.
+                        </p>
+                    </article>
+
+                    <article class="edu-card">
+                        <span class="badge-pill">2010</span>
+                        <h3>Diploma in Electronics Engineering</h3>
+                        <p class="edu-org">Department of Technical Education, Kerala</p>
+                        <p class="edu-desc">
+                            Three-year technical diploma building strong analytical, logical, and engineering
+                            problem-solving foundations.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Inquiry Section -->
+        <section class="section section-alt" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <span class="eyebrow">Contact</span>
+                    <h2>Connect with Deepa VP</h2>
+                    <p>
+                        Available to connect regarding PHP &amp; Laravel training, student project mentorship,
+                        and PHP web development opportunities.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label">Email</span>
+                            <div class="contact-value-row">
+                                <a href="mailto:deepa.vp3@gmail.com" id="email-text">deepa.vp3@gmail.com</a>
+                                <button type="button" class="copy-mini-btn" id="copy-email-btn">Copy</button>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Phone</span>
+                            <div class="contact-value-row">
+                                <a href="tel:+918943060738">+91 8943060738</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Location</span>
+                            <span>Thrissur, Kerala, India</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">LinkedIn</span>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/deepa-parameswaran-5450bb144/" target="_blank"
+                                    rel="noopener noreferrer">linkedin.com/in/deepa-parameswaran-5450bb144/ &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form" novalidate>
+                    <h3>Send a Message</h3>
+
+                    <div class="form-group">
+                        <label for="inquiry-type">Inquiry Type</label>
+                        <select id="inquiry-type" name="inquiryType">
+                            <option value="PHP / Laravel Training &amp; Mentorship">PHP / Laravel Training &amp; Mentorship</option>
+                            <option value="PHP Web Development Opportunity">PHP Web Development Opportunity</option>
+                            <option value="CodeIgniter / Application Maintenance">CodeIgniter / Application Maintenance</option>
+                            <option value="Workshop / Technical Session">Workshop / Technical Session</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Share details about your training requirement or PHP project..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="current-year">2026</span> Deepa VP &bull; PHP Developer &amp; PHP Trainer &bull; Thrissur, Kerala, India.</p>
+            <a href="#top" class="back-to-top">Back to top &uarr;</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
