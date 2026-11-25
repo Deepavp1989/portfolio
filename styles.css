@@ -26,6 +26,7 @@
     --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 }
 
+
 html[data-theme="light"] {
     --bg: #f8fafc;
     --bg-alt: #eef2f7;
@@ -1068,7 +1069,7 @@ html[data-theme="light"] .icon-sun {
     margin-bottom: 14px;
 }
 
-.contact-info > p {
+.contact-info>p {
     color: var(--text-muted);
     margin-bottom: 26px;
 }
@@ -1279,6 +1280,7 @@ html[data-theme="light"] .icon-sun {
    Responsive Breakpoints
    ========================================================================== */
 @media (max-width: 980px) {
+
     .hero-grid,
     .training-layout,
     .contact-grid {
@@ -1342,6 +1344,7 @@ html[data-theme="light"] .icon-sun {
 }
 
 @media (max-width: 520px) {
+
     .skills-grid,
     .stats-grid {
         grid-template-columns: 1fr;
